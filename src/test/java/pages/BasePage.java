@@ -5,6 +5,7 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.html5.ApplicationCache;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
@@ -50,7 +51,11 @@ public class BasePage {
         element.sendKeys(text);
     }
 
-    protected void hideKeyBoard() {
+    public void hideKeyBoard() {
         AppiumConfig.getDriver().hideKeyboard();
+    }
+
+    public void clickBackBtn() {
+        AppiumConfig.getDriver().navigate().back();
     }
 }

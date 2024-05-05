@@ -32,6 +32,7 @@ public class SearchPage extends BasePage{
     }
 
     public void openLoginPage() {
+        wait(buttonsInMenu, 3000);
         clickBase(buttonsInMenu);
     }
 

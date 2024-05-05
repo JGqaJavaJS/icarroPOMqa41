@@ -13,7 +13,7 @@ public class AddNewCarTests extends BaseTest{
     public void classPreconditions() {
         searchPage.clickMenu();
         searchPage.openLoginPage();
-        loginPage.positiveLogin(user);
+        loginPage.fillAllLoginFields(user);
     }
 
     @Test
